@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
+
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Playfair Display SC', serif;
+}
+
+body{
+	width: 100%;
+	height: 100vh;
+}
+
+
+.container{
+	width: 100%;
+	height: 500px;
+	background-color: black;
+	background-size: cover;
+	background-repeat: no-repeat;	
+	position: relative;
+}
+
+.container span{
+	font-size: 60px;
+	color: #fc8158;
+}
+
+.container h1{
+	text-align: center;
+	color: white;
+	position: absolute;
+	top: 120px;
+	left: 400px;
+
+	text-shadow: -2px 2px 3px orange;
+	font-size: 40px;
+	letter-spacing: 3px;
+}
+
+.container .paper-lanter img{
+	width: 100px;
+	animation: lanter 7s linear infinite;
+	opacity: 0;
+}
+
+.container .paper-lanter{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	position: absolute;
+	bottom: -70px;
+}
+
+.container .paper-lanter img:nth-of-type(1){
+	animation-delay: 1s;
+}
+
+.container .paper-lanter img:nth-of-type(2){
+	width: 120px;
+	animation-delay: 3.5s;
+}
+
+.container .paper-lanter img:nth-of-type(3){
+	width: 200px;
+	animation-delay: 2s;
+}
+
+.container .paper-lanter img:nth-of-type(4){
+	width: 50px;
+	animation-delay: 4.5s;
+}
+
+.container .paper-lanter img:nth-of-type(5){
+	animation-delay: 1.5s;
+}
+
+.container .paper-lanter img:nth-of-type(6){
+	animation-delay: 3s;
+}
+
+.container .paper-lanter img:nth-of-type(7){
+	width: 70px;
+	animation-delay: 1s;
+}
+
+@keyframes lanter{
+	0%{
+		transform: translateY(0);
+		opacity: 0;
+	}
+
+	50%{
+		opacity: 1;
+	}
+
+	70%{
+		opacity: 1;
+	}
+
+	100%{
+		transform: translateY(-100vh);
+	}
+}
+
+
+.container2{
+	width: 100%;
+	height: 400px;
+	display: flex;
+	position: absolute;
+	top: 400px;
+}
+
+.container2 .photo{
+	width: 300px;
+	height: 400px;
+	margin-left: 135px;
+
+	transition: 1s;
+	/*transform-origin: top;*/
+
+	box-shadow: 3px -3px 3px #fc8158;
+	
+}
+
+.container2 .photo img{
+	width: 100%;
+	height: 400px;
+	display: block;
+
+}
+
+.photo:first-child{
+	margin-top: -100px;
+}
+
+.photo:last-child{
+	margin-top: -100px;
+}
+
+.container2 .photo:first-child:hover{
+
+	transform: translateY(100px);
+
+}
+
+.container2 .photo:last-child:hover{
+
+	transform: translateY(100px);
+}
+
+
+
